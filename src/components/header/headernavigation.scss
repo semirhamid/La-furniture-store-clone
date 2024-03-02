@@ -1,0 +1,112 @@
+$active-color: #f35643;
+.nav-link {
+  display: block;
+  padding: 23px 25px;
+  margin: 0 -25px;
+  font:
+    600 16px/30px Poppins,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+  color: #111;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: $active-color;
+}
+
+.submenu {
+  padding: 0 0 20px 20px;
+  position: static;
+  font:
+    400 14px/19px Poppins,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+  background: #fff;
+  box-shadow: -3px 0 10px 0 #d6d3d3;
+  &.container:after {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    content: '';
+  }
+}
+.category-item {
+  border-bottom: 1px solid #f7f6f5;
+  padding: 17px 15px;
+  border-left: 2px solid white;
+  span {
+    font:
+      400 14px/19px Poppins,
+      Helvetica Neue,
+      Helvetica,
+      Arial,
+      sans-serif;
+  }
+  width: 200px;
+}
+.category-item:hover {
+  background: #f7f6f5;
+  border-left: 2px solid #f35643;
+  cursor: pointer;
+  span {
+    text-decoration: underline;
+  }
+}
+
+.megamenu__submenu {
+  width: 322px;
+  &:hover {
+    .megamenu__submenu-child {
+      display: flex;
+      box-shadow: 2px 0 10px 0 #d6d3d3;
+      padding: 20px 20px 20px 30px;
+      position: absolute;
+      left: 322px;
+      width: fit-content;
+      top: 0;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      z-index: 50;
+      background: #fff;
+    }
+  }
+}
+
+.megamenu__submenu-items {
+  a {
+    text-decoration: none;
+  }
+  span {
+    text-decoration: none;
+  }
+  .title-link {
+    margin-bottom: 15px;
+    span {
+      font-weight: 600;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+}
+.sub-menu__childs {
+  li {
+    a {
+      margin-bottom: 0;
+      span {
+        font-weight: 400;
+        text-transform: none;
+        text-decoration: none !important;
+      }
+    }
+  }
+}

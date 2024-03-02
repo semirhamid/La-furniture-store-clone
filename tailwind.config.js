@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       maxWidth: {
-        limit: '1410px'
+        limit: '1410px',
+        stretch: '1610px'
       },
       colors: {
         active: '#F67C6D'

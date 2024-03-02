@@ -1,0 +1,26 @@
+.grid-overflow-hidden {
+  overflow: hidden;
+  position: relative;
+
+  .grid-image {
+    transition:
+      transform 0.3s ease,
+      filter 0.3s ease;
+    filter: brightness(100%);
+  }
+
+  &:hover .grid-image {
+    transform: scale(1.2);
+    filter: brightness(70%);
+  }
+
+  .grid-absolute {
+    position: absolute;
+  }
+}
+
+.vertical__stand {
+  .grid-image {
+    height: 100%;
+  }
+}

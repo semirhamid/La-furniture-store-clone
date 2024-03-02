@@ -1,0 +1,62 @@
+.block-title {
+  h3 {
+    margin: 0 auto 50px;
+    max-width: 1405px;
+    color: #212121;
+    font:
+      700 36px/41px Poppins,
+      Helvetica Neue,
+      Helvetica,
+      Arial,
+      sans-serif;
+    text-align: center;
+  }
+  .button__more {
+    font:
+      600 13px/36px Poppins,
+      Helvetica Neue,
+      Helvetica,
+      Arial,
+      sans-serif;
+    color: #fff;
+    background: #f76c5b;
+    border: 1px solid #f35643;
+    text-transform: uppercase;
+    padding: 0 27px;
+    position: relative;
+    float: right;
+    -webkit-box-shadow: 0 0 0 0 #f35643;
+    box-shadow: 0 0 0 0 #f35643;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    margin: 0 1px 0 0;
+  }
+  .button__more::before {
+    content: '';
+    width: 49px;
+    height: 1px;
+    background: #fbccc6;
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    margin: 0 1px 0 0;
+  }
+  .button__more:hover {
+    text-decoration: none;
+    background: #f35643;
+    color: #fff;
+    -webkit-box-shadow: 0 10px 30px 0 #f35643;
+    box-shadow: 0 10px 30px 0 #f35643;
+    &::before {
+      width: 0;
+    }
+  }
+}

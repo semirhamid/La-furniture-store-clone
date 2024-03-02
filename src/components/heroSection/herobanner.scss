@@ -1,0 +1,37 @@
+#content-newsletter {
+  padding: 17px 20px;
+  height: auto;
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #111;
+  font:
+    300 14px/19px Open Sans,
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+.button__outline {
+  margin: 0;
+  font:
+    600 13px/53px Poppins,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+  background: #f2f1ef;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  padding: 0 29px;
+  text-transform: uppercase;
+  border: 1px solid #f2c2bb;
+  color: #f35643;
+  width: 100%;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}

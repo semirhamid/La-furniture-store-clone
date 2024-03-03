@@ -1,9 +1,11 @@
-$active-color: #f67c6d;
+$active-color: #f35643;
 .nav-icons:hover {
+  transition: all 0.5s ease;
   color: $active-color;
   svg {
     path {
       stroke: $active-color;
+      transition: all 0.4s ease;
     }
   }
 }
@@ -12,8 +14,13 @@ $active-color: #f67c6d;
   &.nav-icons {
     span {
       color: $active-color;
+      transition: all 0.4s ease;
+    }
+    span:last-child {
+      filter: drop-shadow(0 0 2px $active-color);
     }
     svg {
+      filter: none;
       circle {
         fill: $active-color;
       }
@@ -34,6 +41,10 @@ $active-color: #f67c6d;
   position: relative;
   display: inline-block;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
 }
 
 .animated-icons:after {
@@ -59,4 +70,22 @@ $active-color: #f67c6d;
   width: 40px;
   height: 40px;
   margin: -20px 0 0 -20px;
+}
+.animated-icons:hover {
+  path {
+    fill: #f35643;
+  }
+}
+.animated-icons:hover {
+  &.stroke {
+    path {
+      fill: none;
+      stroke: #f35643;
+    }
+  }
+}
+.nav_box {
+  svg {
+    margin-right: 5px;
+  }
 }

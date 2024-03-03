@@ -1,0 +1,254 @@
+.benefit {
+  padding: 95px 10px 90px;
+  margin: 0 auto;
+  max-width: 1430px;
+  font-size: 0;
+  line-height: 0;
+  .text-holder {
+    padding-left: 0;
+  }
+}
+
+.benefit li {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  flex: 0 1 50%;
+  box-sizing: border-box;
+}
+
+.benefit li:first-child,
+.benefit li:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+.benefit li img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.benefit li .text-holder {
+  font:
+    300 15px/25px Open Sans,
+    Helvetica,
+    Arial,
+    sans-serif;
+  color: #646464;
+  max-width: 260px;
+  margin: 0 0 0 50px;
+}
+
+.benefit li h2 {
+  margin: 0 0 15px;
+  font:
+    400 16px/25px Poppins,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+  color: #111;
+}
+
+.benefit li h2 br {
+  display: none;
+}
+
+.page-footer .block.newsletter {
+  background: #92979d
+    url(https://www.lafurniturestore.com/static/version1708683578/frontend/Laf/v1/en_US/images/bg-subscribe.jpg)
+    no-repeat;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+  padding: 48px 20px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .page-footer .block.newsletter {
+    padding: 40px 16px;
+    margin: 0 0 24px;
+  }
+}
+
+.page-footer .block.newsletter > .content {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.page-footer .block.newsletter .field.newsletter {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1023px) {
+  .page-footer .block.newsletter .field.newsletter {
+    flex-direction: column;
+  }
+}
+
+.page-footer .block.newsletter .field.newsletter .text-holder {
+  width: 400px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 1023px) {
+  .page-footer .block.newsletter .field.newsletter .text-holder {
+    text-align: center;
+    margin-bottom: 24px;
+    max-width: 100%;
+  }
+}
+
+.page-footer .block.newsletter .field.newsletter .text-holder .label {
+  font:
+    600 26px/39px Poppins,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+  margin: 0 0 8px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .page-footer .block.newsletter .field.newsletter .text-holder .label {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.page-footer .block.newsletter .field.newsletter .control {
+  display: flex;
+}
+
+.page-footer
+  .block.newsletter
+  .field.newsletter
+  .control
+  div.mage-error[generated] {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+}
+
+@media only screen and (max-width: 640px) {
+  .page-footer .block.newsletter .field.newsletter .control {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .page-footer
+    .block.newsletter
+    .field.newsletter
+    .control
+    div.mage-error[generated] {
+    position: static;
+    text-align: center;
+    margin-bottom: 13px;
+  }
+}
+
+.page-footer .block.newsletter .field.newsletter .control .input-holder {
+  position: relative;
+}
+
+.page-footer .block.newsletter .field.newsletter .control input {
+  font:
+    400 16px/21px Open Sans,
+    Helvetica,
+    Arial,
+    sans-serif;
+  padding: 11px;
+  border-radius: 4px;
+  width: 319px;
+}
+
+@media only screen and (max-width: 640px) {
+  .page-footer .block.newsletter .field.newsletter .control input {
+    margin: 0 0 8px;
+    width: 100%;
+  }
+}
+
+.page-footer .block.newsletter .field.newsletter .control .action.subscribe {
+  background-image: none;
+  background: #f35643;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family:
+    Open Sans,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-weight: 600;
+  padding: 4px 25px;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  transition-property: background-color, border-color, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  width: 197px;
+  text-align: center;
+  margin: 0 0 0 8px;
+  border-radius: 4px;
+}
+
+.page-footer
+  .block.newsletter
+  .field.newsletter
+  .control
+  .action.subscribe:active,
+.page-footer
+  .block.newsletter
+  .field.newsletter
+  .control
+  .action.subscribe:focus {
+  background: #f2402c;
+  border: none;
+  color: none;
+}
+
+.page-footer
+  .block.newsletter
+  .field.newsletter
+  .control
+  .action.subscribe:hover {
+  background: #f68579;
+  border: none;
+  color: none;
+}
+
+.page-footer
+  .block.newsletter
+  .field.newsletter
+  .control
+  .action.subscribe.disabled,
+.page-footer
+  .block.newsletter
+  .field.newsletter
+  .control
+  .action.subscribe[disabled],
+fieldset[disabled]
+  .page-footer
+  .block.newsletter
+  .field.newsletter
+  .control
+  .action.subscribe {
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 640px) {
+  .page-footer .block.newsletter .field.newsletter .control .action.subscribe {
+    width: 100%;
+    margin: 0;
+  }
+}

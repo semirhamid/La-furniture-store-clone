@@ -5,9 +5,9 @@ import './headertarget.scss'
 export default function HeaderTarget() {
   return (
     <div>
-      <div className="max-w-limit flex justify-between mx-auto py-4 border-b-active border-b-[1px]" >
-        <div className='left-nav flex items-center'>
-          <a href="">
+      <div className="max-w-limit flex content-center justify-between mx-auto py-[15px] border-b-active border-b-[1px]" >
+        <div className='left-nav flex items-center flex-1'>
+          <a href="" className="pr-10 nav_box">
             <div className='group nav-icons flex'>
               <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20.9999 16.015V19.015C21.0011 19.2935 20.944 19.5692 20.8324 19.8244C20.7209 20.0795 20.5572 20.3086 20.352 20.4969C20.1468 20.6851 19.9045 20.8285 19.6407 20.9177C19.3769 21.0069 19.0973 21.0401 18.8199 21.015C15.7428 20.6806 12.7869 19.6292 10.1899 17.945C7.77376 16.4097 5.72527 14.3612 4.18993 11.945C2.49991 9.33621 1.44818 6.366 1.11993 3.27501C1.09494 2.99847 1.12781 2.71977 1.21643 2.45663C1.30506 2.19349 1.4475 1.95169 1.6347 1.74663C1.82189 1.54156 2.04974 1.37771 2.30372 1.26553C2.55771 1.15334 2.83227 1.09527 3.10993 1.09501H6.10993C6.59524 1.09023 7.06572 1.26208 7.43369 1.57854C7.80166 1.89499 8.04201 2.33445 8.10993 2.81501C8.23656 3.77507 8.47138 4.71773 8.80993 5.62501C8.94448 5.98293 8.9736 6.37192 8.89384 6.74589C8.81408 7.11985 8.6288 7.46312 8.35993 7.73501L7.08993 9.00501C8.51349 11.5086 10.5864 13.5815 13.0899 15.005L14.3599 13.735C14.6318 13.4661 14.9751 13.2809 15.3491 13.2011C15.723 13.1213 16.112 13.1505 16.4699 13.285C17.3772 13.6236 18.3199 13.8584 19.2799 13.985C19.7657 14.0535 20.2093 14.2982 20.5265 14.6725C20.8436 15.0468 21.0121 15.5246 20.9999 16.015Z" stroke="#212121" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -17,12 +17,12 @@ export default function HeaderTarget() {
               </span>
             </div>
           </a>
-          <a href="">
+          <a href="" className="pr-10 nav_box">
             <div className='group nav-icons flex'>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="23"
-                height="23"
+                width="29"
+                height="27"
                 fill="none"
                 viewBox="0 0 24 24"
               >
@@ -48,13 +48,13 @@ export default function HeaderTarget() {
               </span>
             </div>
           </a>
-          <a href="">
+          <a href="" className="pr-10 nav_box">
             <div className='group nav-icons flex fill'>
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="23"
-                  height="23"
+                  width="25"
+                  height="25"
                   fill="none"
                   viewBox="0 0 24 24"
                 >
@@ -75,11 +75,11 @@ export default function HeaderTarget() {
             </div>
           </a>
         </div>
-        <div className="logo">
+        <div className="logo flex justify-center flex-grow-0 flex-shrink-1 flex-basis-[640px]">
           <img src={logo} className='max-h-[40px]' alt="" />
         </div>
-        <div className="right-nav flex">
-          <span className='animated-icons'>
+        <div className="right-nav flex justify-end flex-1">
+          <span className='animated-icons ml-7 stroke'>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="22"
@@ -97,7 +97,7 @@ export default function HeaderTarget() {
               ></path>
             </svg>
           </span>
-          <span className="animated-icons">
+          <span className="animated-icons ml-7">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="19"
@@ -113,7 +113,7 @@ export default function HeaderTarget() {
               </g>
             </svg>
           </span>
-          <span className="animated-icons">
+          <span className="animated-icons ml-7">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="22"

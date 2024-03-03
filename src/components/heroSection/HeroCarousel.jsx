@@ -15,7 +15,7 @@ export default function HeroCarousel() {
         infiniteLoop={true}
         renderArrowPrev={(clickHandler) => (
           <button
-            className="absolute flex left-5 translate-y-1/2 carousel-arrow bg-white"
+            className="absolute flex left-16 carousel-arrow bg-white"
             type="button"
             onClick={clickHandler}
           >
@@ -34,7 +34,7 @@ export default function HeroCarousel() {
         )}
         renderArrowNext={(clickHandler) => (
           <button
-            className="absolute flex right-5 translate-y-1/2 carousel-arrow bg-white"
+            className="absolute flex right-16 carousel-arrow bg-white"
             type="button"
             onClick={clickHandler}
           >

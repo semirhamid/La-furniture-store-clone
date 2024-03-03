@@ -3,6 +3,8 @@ import HeroZoom from './Gallery'
 import ShopByRoom from './Shop'
 import ExploreBanner from './ExploreBanner'
 import OutDoorDeal from './OutDoorDeal'
+import FurnitureBanner from './FurnitureBanner'
+import Stores from './Stores'
 
 export default function GridGalllery() {
   return (
@@ -27,7 +29,7 @@ export default function GridGalllery() {
       </div>
       <div className="bg-[#f7f6f5]">
         <div className='pt-16 px-5 xl:px-0 pb-20 mx-auto max-w-limit'>
-          <h3 class="font-bold text-4xl text-center mb-12">Shop by Room</h3>
+          <h3 className="font-bold text-4xl text-center mb-12">Shop by Room</h3>
           <div>
             <ShopByRoom />
           </div>
@@ -38,6 +40,12 @@ export default function GridGalllery() {
       </div>
       <div>
         <OutDoorDeal />
+      </div>
+      <div>
+        <FurnitureBanner />
+      </div>
+      <div>
+        <Stores />
       </div>
     </>
   )

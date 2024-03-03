@@ -15,6 +15,14 @@ $active-color: #f35643;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  span {
+    font:
+      600 16px/30px Poppins,
+      Helvetica Neue,
+      Helvetica,
+      Arial,
+      sans-serif;
+  }
 }
 
 .nav-link:hover {
@@ -60,6 +68,9 @@ $active-color: #f35643;
   span {
     text-decoration: underline;
   }
+  svg {
+    fill: #f35643;
+  }
 }
 
 .megamenu__submenu {
@@ -70,8 +81,7 @@ $active-color: #f35643;
       box-shadow: 2px 0 10px 0 #d6d3d3;
       padding: 20px 20px 20px 30px;
       position: absolute;
-      left: 322px;
-      width: fit-content;
+      left: 342px;
       top: 0;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -90,8 +100,8 @@ $active-color: #f35643;
     text-decoration: none;
   }
   .title-link {
-    margin-bottom: 15px;
     span {
+      margin-bottom: 15px;
       font-weight: 600;
       text-transform: uppercase;
       text-decoration: none;
@@ -107,6 +117,180 @@ $active-color: #f35643;
         text-transform: none;
         text-decoration: none !important;
       }
+    }
+  }
+}
+.menu-thumb-img {
+  width: 570px;
+  padding: 20px;
+}
+.megamenu__submenu-child {
+  max-width: 1073px;
+  max-height: 398px;
+}
+.megamenu__submenu-items {
+  flex: 1;
+}
+.sub-menu__childs > li {
+  margin-bottom: 7px;
+}
+
+.title-link {
+  padding-bottom: 15px;
+}
+.menu-thumb-link {
+  text-transform: uppercase;
+}
+.search-bar {
+  .block-search {
+    min-width: 416px;
+    padding-left: 20px;
+    padding-top: 16px;
+    box-sizing: border-box;
+  }
+
+  @media only screen and (max-width: 480px) {
+    .block-search {
+      min-width: 1px;
+    }
+  }
+
+  .block-search * {
+    box-sizing: border-box;
+  }
+
+  .block-search .block-title {
+    display: none;
+  }
+
+  .block-search .block-content {
+    margin-bottom: 0;
+  }
+
+  .block-search .field.search .control {
+    position: relative;
+    z-index: 3;
+  }
+
+  .block-search input#search {
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 10px 10px 44px;
+  }
+
+  .block-search input#search::-webkit-input-placeholder {
+    color: #aaa;
+    font-weight: 500;
+  }
+
+  .block-search input#search:-moz-placeholder,
+  .block-search input#search::-moz-placeholder {
+    color: #aaa;
+    font-weight: 500;
+  }
+
+  .block-search input#search:-ms-input-placeholder {
+    color: #aaa;
+    font-weight: 500;
+  }
+
+  .block-search input#search:focus {
+    box-shadow: none;
+    border-color: #f35643;
+  }
+
+  .block-search input#search:focus::-webkit-input-placeholder {
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .block-search input#search:focus:-moz-placeholder,
+  .block-search input#search:focus::-moz-placeholder {
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .block-search input#search:focus:-ms-input-placeholder {
+    color: #fff;
+    font-weight: 500;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .block-search input#search {
+      width: 100%;
+      border-radius: 4px;
+      float: none;
+      margin-right: 0;
+      transition: none;
+      box-sizing: border-box;
+    }
+  }
+
+  .block-search .actions {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+  }
+
+  .block-search .action.search {
+    width: 21px;
+    height: 21px;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .block-search .action.search > span {
+    width: 100%;
+    height: 100%;
+    background: none !important;
+  }
+
+  .block-search .action.search > span:before {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: icomoon, sans-serif;
+    content: '';
+    color: #000;
+    font-size: 17px;
+    speak: none;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .block-search .action.search > span:hover:before {
+    color: #f35643;
+  }
+
+  .page-header .block-search {
+    margin-bottom: 0;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .page-header .block-search {
+      max-width: none;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0;
+      float: none;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .page-header .block-search {
+      padding: 3px 0;
     }
   }
 }

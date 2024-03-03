@@ -47,16 +47,16 @@ const roomTypes = [
 
 const ShopByRoom = () => {
   return (
-    <ul className="grid grid-cols-4 gap-5">
+    <ul className="grid grid-cols-4 gap-7">
       {roomTypes.map((room, index) => (
-        <li key={index} className="z-0">
+        <li key={index} className="z-0 relative">
           <div className="">
             <a className="img-container" href={room.link}>
-              <img className='w-full hover:shadow-md hover:scale-[1.05] hover:z-50' src={room.imageSrc} alt={room.name} />
+              <img className='w-full hover:shadow-md hover:scale-[1.1] hover:z-50' src={room.imageSrc} alt={room.name} />
             </a>
           </div>
-          <a className="top-3 left-3 absolute z-30" href={room.link}>
-            <span className="font-bold text-2xl">{room.name}</span>
+          <a className="top-7 left-7 absolute z-30" href={room.link}>
+            <span className="font-semibold text-xl">{room.name}</span>
           </a>
         </li>
       ))}
